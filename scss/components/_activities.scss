@@ -7,16 +7,19 @@
     margin-top: 0;
     margin-bottom: 50px;
 }
-.activities__items {
+
+.activities__list {
     display: flex;
     gap: 30px;
     padding-left: 0;
+    
 }
 
 .activities__card {
     position: relative;
     width: 370px;
     height: 294px;
+    
 }
 
 .activities__description {

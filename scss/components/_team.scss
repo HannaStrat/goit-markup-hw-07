@@ -55,6 +55,12 @@
 
 .team-connect__icon {
     fill: rgba(175, 177, 184, 1);
+
+    .team-connect__link:hover &,
+    .team-connect__link:focus & {
+        fill: #ffffff;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .team-connect__link {
@@ -69,17 +75,14 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.team-connect__link:hover,
-.team-connect__link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
     fill: #ffffff;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
-.team-connect__link:hover .team-connect__icon,
-.team-connect__link:focus .team-connect__icon {
-    fill: #ffffff;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+
